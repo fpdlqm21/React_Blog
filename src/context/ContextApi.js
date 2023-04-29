@@ -10,10 +10,12 @@ class ContextApi extends React.Component{
         this.deleteStateFunc = this.deleteStateFunc.bind(this);
         this.moveContentFunc = this.moveContentFunc.bind(this);
         this.editContentFunc = this.editContentFunc.bind(this);
+        this.searchTitleFunc = this.searchTitleFunc.bind(this);
         this.state = {
             Contents:[],
             MoveFlag: 'none',
             EditFlag: false,
+            SearchIdx: 'none',
         };
     }
 
@@ -59,6 +61,16 @@ class ContextApi extends React.Component{
         this.setState({EditFlag: flag});
     }
 
+    //게시물 검색하는 함수
+    searchTitleFunc(tValue){
+        const serachTitle = tValue.SearchTitle;
+
+        this.state.Contents.forEach((element, idx) => {
+            if(element.Title === serachTitle)
+                this.setState({SearchIdx: idx});
+        })
+    }
+
     render(){
         const content = {
             ...this.state,
@@ -66,6 +78,7 @@ class ContextApi extends React.Component{
             deleteStateFunc: this.deleteStateFunc,
             moveContentFunc: this.moveContentFunc,
             editContentFunc: this.editContentFunc,
+            searchTitleFunc: this.searchTitleFunc,
         }
         return(
             <Provider value={content}>

@@ -16,6 +16,7 @@ import Post from "./components/Post";
 import Home from "./components/Home";
 import CompleteContent from "./components/CompleteContent";
 import EditContent from "./components/EditContent";
+import SearchedContent from "./components/SearchedContent";
 
 /**Styled */
 const GlobalStyle = createGlobalStyle`
@@ -45,6 +46,7 @@ class App extends Component {
                   <Route exact path="/Post" element={<Post/>}/>  
                   <Route exact path="/Complete" element={<CompleteContent/>}/>
                   <Route exact path="/Edit" element={<EditContent/>}/>
+                  <Route exact path="/Searched" element={<SearchedContent/>}/>
                 </Routes>
               </ContextApi>
           </StyledApp>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Consumer } from '../context/ContextApi';
+import {Link} from 'react-router-dom';
 
 const StyledDiv = styled.div`
     display: flex;
@@ -28,12 +30,39 @@ const StyledBtn = styled.button`
 `;
 
 class Search extends Component {
+    constructor(props){
+        super(props);
+        this.findFunc = this.findFunc.bind(this);
+        this.state = {};
+    }
+
+    findFunc(e){
+        const Value = e.target.value;
+        this.setState({
+            SearchTitle: Value,
+        });
+    }
+
     render() {
         return (
-            <StyledDiv>
-                <StyledInput type="text" placeholder='검색어 입력'/>
-                <StyledBtn>검색</StyledBtn>
-            </StyledDiv>
+            <Consumer>
+                {ContextValue => (
+                    <StyledDiv>
+                        <StyledInput 
+                            type="text" 
+                            placeholder='게시물 제목입력'
+                            onChange={this.findFunc}
+                        />
+                        <Link to={'/Searched'}>
+                            <StyledBtn
+                                onClick={e => ContextValue.searchTitleFunc(this.state)}
+                            >
+                                검색
+                            </StyledBtn>
+                        </Link>
+                    </StyledDiv>
+                )}
+            </Consumer>
         );
     }
 }
