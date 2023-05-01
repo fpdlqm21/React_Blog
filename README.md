@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# React Blog
+리액트를 이용한 블로그 앱입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## :pushpin:프로젝트 소개
+게시물을 추가, 삭제, 수정 및 공유할 수 있는 웹앱입니다.
 
-In the project directory, you can run:
 
-### `yarn start`
+## :runner:개발 기간
+<ul>
+  <li>23.04.03 ~ 23.04.24</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :memo:와이어프레임
+- <strong>Home</strong>
+<img width='80%' src='https://user-images.githubusercontent.com/77057563/235474085-92150d71-8d7d-4a61-a4c4-56a38628270c.png'/>
 
-### `yarn test`
+- <strong>Contents</strong>
+<img width='80%' src='https://user-images.githubusercontent.com/77057563/235475186-e2175429-bd1a-468c-9ba6-3a1c686f2f8b.png'/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- <strong>Delete</strong>
+<img width='80%' src='https://user-images.githubusercontent.com/77057563/235475120-626419a0-766b-47ac-b8cc-bcc08b3ff883.png'/>
 
-### `yarn build`
+- <strong>Search</strong>
+<img width='80%' src='https://user-images.githubusercontent.com/77057563/235475015-27965002-39a2-438e-a41d-971595449a9d.png'/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📖개발 환경
+- 'React'
+- 'VSCode'
+- 'StyledComponent'
+- 'Context Api'
+- 'Router'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔥주요 기능
+#### 게시물 추가(Create), 게시물 확인(Read), 게시물 수정(Update), 게시물 삭제(Delete), 게시물 검색
+<img src='https://user-images.githubusercontent.com/77057563/235474427-aff2fb63-5450-46bc-9df6-2f9ca8f07520.gif'/>
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## :v:짧은 후기
+혼자서 개발하다보니 부족한 부분이 많고 설계했던 그대로 구현이 되지 않았던 부분들이 있었다.</br>
+기능 구현에 있어서 막혔던 상황이 아주 많았다. 그럴 때마다 온갖 사례들을 찾아보고 책들을 읽어가며 해결해 나갔다. 문제들이 해결이 되고 기능이 제대로 동작할 때마다 머리가 아팠던 스트레스들이 싹 사라지고 혼자 환호를 하곤 했었다.</br>
+이후의 프로젝트에서는 더욱 더 발전된 기능들과 다수의 팀원들이 함께하는 주제로 완성도를 높이고 문제해결을 해보고싶다.
